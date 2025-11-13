@@ -36,20 +36,35 @@ nav a:hover {
 #hero {
   text-align: center;
   padding: 4rem 1rem;
-  background: linear-gradient(to bottom right, #007bff, #00c6ff);
+  background: linear-gradient(135deg, #007bff, #00c6ff);
   color: white;
+  border-bottom: 3px solid #005bbb;
 }
 
-/* Content Sections */
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid white;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section Spacing */
 section {
-  padding: 2rem;
+  padding: 3rem 1rem;
   max-width: 800px;
   margin: auto;
-}
-
-h2 {
-  color: #007bff;
-  margin-bottom: 0.5rem;
+  background: white;
+  border-radius: 12px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
 /* Footer */
@@ -57,6 +72,7 @@ footer {
   text-align: center;
   background: #111;
   color: #bbb;
-  padding: 1rem;
+  padding: 1.5rem;
   font-size: 0.9rem;
+  margin-top: 3rem;
 }
