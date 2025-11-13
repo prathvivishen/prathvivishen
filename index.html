@@ -5,47 +5,170 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prathvi Vishen | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-<script src="script.js"></script>
 <body>
-  <header>
-    <h1>Prathvi Vishen</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+  <header class="header">
+    <div class="header-content">
+      <h1 class="logo">Prathvi Vishen</h1>
+      <nav class="nav">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
 
-  <section id="hero">
-    <img src="profile.jpg" alt="Prathvi Vishen" class="profile-img">
-    <h2>Welcome 👋</h2>
-    <p>I’m Prathvi — exploring web creation, design, and tech!</p>
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <div class="hero-image-wrapper">
+        <img src="profile.png" alt="Prathvi Vishen" class="profile-img">
+      </div>
+      <h2 class="hero-title">Welcome 👋</h2>
+      <p class="hero-subtitle">I'm Prathvi — exploring web creation, design, and tech!</p>
+      <p class="hero-description">Building digital experiences with creativity and passion</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a curious learner passionate about technology, creativity, and building digital experiences.
-      This website is my space to share projects and ideas.
-    </p>
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-content">
+        <p class="about-text">
+          I'm a curious learner passionate about technology, creativity, and building digital experiences.
+          This website is my space to share projects and ideas that inspire me.
+        </p>
+        <p class="about-text">
+          I believe in continuous learning and pushing the boundaries of what's possible on the web.
+          Every project is an opportunity to grow and create something meaningful.
+        </p>
+      </div>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>My First Website</strong> – Hosted with GitHub Pages</li>
-      <li><strong>Learning Journey</strong> – Coming soon!</li>
-    </ul>
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-title">Skills & Technologies</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>Web Design</h3>
+          <p>Creating beautiful and intuitive user interfaces</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💻</div>
+          <h3>Development</h3>
+          <p>Building responsive and interactive websites</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🚀</div>
+          <h3>Innovation</h3>
+          <p>Exploring new technologies and creative solutions</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎯</div>
+          <h3>Problem Solving</h3>
+          <p>Tackling challenges with analytical thinking</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s connect! Email me at <a href="mailto:prathvivishen@email.com">yourname@email.com</a></p>
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <h3>My First Website</h3>
+            <span class="project-status">Live</span>
+          </div>
+          <p class="project-description">
+            A personal portfolio website hosted with GitHub Pages, showcasing my journey into web development.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Learning Journey</h3>
+            <span class="project-status coming-soon">Coming Soon</span>
+          </div>
+          <p class="project-description">
+            Documenting my learning experiences and sharing insights from my exploration of web technologies.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Blog</span>
+            <span class="tag">Education</span>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-header">
+            <h3>Future Projects</h3>
+            <span class="project-status coming-soon">In Planning</span>
+          </div>
+          <p class="project-description">
+            Exciting new projects in the pipeline. Stay tuned for updates on innovative web experiences!
+          </p>
+          <div class="project-tags">
+            <span class="tag">TBA</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    <p>© 2025 Prathvi Vishen | Built with ❤️ using GitHub Pages</p>
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-title">Let's Connect</h2>
+      <div class="contact-content">
+        <p class="contact-text">
+          I'm always excited to connect with fellow creators, learners, and tech enthusiasts.
+          Feel free to reach out!
+        </p>
+        <div class="contact-methods">
+          <a href="mailto:prathvivishen@email.com" class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>Email</h3>
+            <p>prathvivishen@email.com</p>
+          </a>
+          <div class="contact-card">
+            <div class="contact-icon">🌐</div>
+            <h3>Social</h3>
+            <p>Connect on your favorite platform</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Prathvi Vishen | Built with ❤️ using GitHub Pages</p>
+      <p class="footer-tagline">Crafted with passion for the web</p>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
