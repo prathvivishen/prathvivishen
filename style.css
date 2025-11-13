@@ -1,0 +1,62 @@
+/* General layout */
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background: #f4f4f9;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background: #111;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom right, #007bff, #00c6ff);
+  color: white;
+}
+
+/* Content Sections */
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #111;
+  color: #bbb;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
